@@ -4,5 +4,10 @@
     {
         public string Caminar();
         public string Comer();
+
+        public string ObtenerDistanciaRecorrida()
+        {
+            return "El animal recorrió 20km";
+        }
     }
 }

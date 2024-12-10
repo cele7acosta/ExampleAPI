@@ -9,6 +9,7 @@ namespace ExampleAPI.Controllers
     public class EjemploDosInterfazController : ControllerBase
     {
         [HttpGet]
+        [Route("api/EjemploInterfazDos")]
         public string EjemploInterfazDos()
         {
             EjemploBase _base = new EjemploBase();
@@ -17,6 +18,7 @@ namespace ExampleAPI.Controllers
             
             return _base.Caminar(perro);
         }
+
 
     }
 }

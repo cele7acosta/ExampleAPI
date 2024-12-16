@@ -8,8 +8,7 @@ namespace ExampleAPI.Controllers
     [ApiController]
     public class EjemploDosInterfazController : ControllerBase
     {
-        [HttpGet]
-        [Route("api/EjemploInterfazDos")]
+        [HttpGet("EjemploInterfazDos")]
         public string EjemploInterfazDos()
         {
             EjemploBase _base = new EjemploBase();

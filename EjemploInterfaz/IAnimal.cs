@@ -7,7 +7,8 @@
 
         public string ObtenerDistanciaRecorrida()
         {
-            return "El animal recorrió 20km";
+            return "El animal recorrió 20km (desde la interfaz)";
         }
+
     }
 }

@@ -21,7 +21,6 @@ namespace ExampleAPI.Controllers
 
         //Endpoint POST para obtener la cotizacion de un tipo especifico de dolar
         [HttpPost(Name = "GetSpecificQuote")]
-
         public async Task<string> GetSpecificQuote([FromBody] Currency Currency) //con FromBody especifico que voy a recibir el parámetro desde el cuerpo del mensaje
         {
             //'FromBody' indica que el parametro 'currency' se recibe en el cuerpo de la solicitud en formato JSON

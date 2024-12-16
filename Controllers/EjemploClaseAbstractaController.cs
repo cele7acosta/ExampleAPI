@@ -9,7 +9,6 @@ namespace ExampleAPI.Controllers
     public class EjemploClaseAbstractaController : ControllerBase
     {
         [HttpGet]
-                
         public string EjemploClaseAbstracta()
         {
             Perro perro= new Perro();

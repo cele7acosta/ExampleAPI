@@ -1,5 +1,4 @@
-﻿//using ExampleAPI.EjemploHerencia;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ExampleAPI.EjemploInterfaz;
 
@@ -9,17 +8,14 @@ namespace ExampleAPI.Controllers
     [ApiController]
     public class EjemploInterfazController : ControllerBase
     {
-        [HttpGet]
-        [Route("api/EjemploInterfaz")]
+        [HttpGet("EjemploInterfaz")]
         public string EjemploInterfaz()
         {
             Gato gato = new Gato();
             return gato.Comer();
         }
 
-        [HttpGet]
-        [Route("api/EjemploInterfazImplementacion")]
-
+        [HttpGet("EjemploInterfazImplementacion")]
         public string EjemploInterfazImplementacion()
         {
             IAnimal perro = new Perro();
